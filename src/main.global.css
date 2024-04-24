@@ -20,3 +20,24 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        height: 920px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .main-container {
+        height: 100%;
+    }
+
+    body,
+    html {
+        overflow-y: hidden;
+    }
+
+    @viewport {
+        user-zoom: fixed;
+    }
+}
