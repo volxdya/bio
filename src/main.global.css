@@ -29,16 +29,11 @@ a {
 
 @media screen and (max-width: 768px) {
 
-    .main-container {
-        height: 100%;
-    }
-
-
     @viewport {
         user-zoom: fixed;
     }
 
-    body,html {
-        overflow-y: none;
-    }
+    body, html {
+        overflow-y: hidden;
+      }
 }
