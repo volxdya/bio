@@ -10,7 +10,7 @@ function App() {
 
   return (
     <Suspense fallback={<div>loading...</div>}>
-    <BrowserRouter>
+    <BrowserRouter basename='/bio/'>
       <div className="wrapper">
         <div className="main-container">
           <div className="w-100 d-flex justify-content-center">
