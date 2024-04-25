@@ -6,13 +6,13 @@ export function Header() {
             <div>
                 <img
                     className="banner"
-                    src="https://img.freepik.com/free-photo/adorable-looking-kitten-with-yarn_23-2150886292.jpg"
+                    src="https://i.pinimg.com/564x/31/0d/1c/310d1c970338d73748c926231b609a34.jpg"
                     alt="banner" />
             </div>
             <div className="text-center">
                 <img
                     className="avatar"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGsKhN2hQT05yp8xnMRkT85FEg3H9t7EAqHi0B2VJInA&s"
+                    src="https://i.pinimg.com/564x/6a/86/0f/6a860f4d5e456ec5c0ee814966ee7695.jpg"
                     alt="avatar" />
             </div>
         </>

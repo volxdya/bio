@@ -1,4 +1,4 @@
-.full-name {
+.main-title {
     font-size: 27px;
     font-weight: 500;
 }
@@ -12,7 +12,7 @@
     margin: 0;
 }
 
-.job-title {
+.other-title {
     color: rgb(111, 111, 111);
     font-size: 18px;
 }

@@ -1,15 +1,26 @@
+import { Link } from 'react-router-dom';
 import './MainPage.css';
 
 export function MainPage() {
     return (
         <>
             <div className="text-center main-info">
-                <p className="full-name">Vladimir</p>
-                <p className="job-title">FullStack developer</p>
+                <p className="main-title">Vladimir</p>
+                <p className="other-title">FullStack developer</p>
             </div>
             <div className="container-btns">
-                <button className="button">About me</button>
-                <button className="button mt-2">Stack</button>
+                <Link to="/about">
+                    <button className="button">About me</button>
+                </Link>
+                <Link to="/stack">
+                    <button className="button mt-2">Stack</button>
+                </Link>
+                <a href="https://t.me/volxdya" target='_blank'>
+                    <button className="button mt-2">Telegram</button>
+                </a>
+                <a href="https://github.com/l1agosta" target='_blank'>
+                    <button className="button mt-2">GitHub (Soon only open source)</button>
+                </a>
             </div>
         </>
     );

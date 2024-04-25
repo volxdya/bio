@@ -6,7 +6,7 @@ body {
 
 .main-container {
     width: 500px;
-    height: 850px;
+    height: 950px;
     border: 1px solid rgb(239, 239, 239);
     border-radius: 15px;
     background-color: #fff;
@@ -20,13 +20,12 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+a {
+    text-decoration: none;
+    color: black;
+    background: none;
+}
 @media screen and (max-width: 768px) {
-    .wrapper {
-        height: 920px;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
 
     .main-container {
         height: 100%;
