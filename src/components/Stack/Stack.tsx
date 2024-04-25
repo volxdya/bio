@@ -11,7 +11,7 @@ export default function Stack() {
             </div>
             <div className="mx-2 me-2 wrapper-all-techonologies">
 
-                <div className='d-flex justify-content-center'>
+                <div className='d-flex justify-content-center mt-4'>
                     <div className="container-cards d-flex justify-content-center flex-wrap gap-4">
                         {technologies.map((item) => {
                             return (
