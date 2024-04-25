@@ -2,7 +2,7 @@ import { technologies } from "../../other/technologies";
 
 export function Card({ srcImg, title, link }: technologies) {
     return (
-        <div className="col-3">
+        <div>
             <div className="container-stack">
                 <a href={link} target="_blank" className="link-stack">
                     <img

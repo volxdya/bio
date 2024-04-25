@@ -1,5 +1,5 @@
 import './Stack.css';
-import { databases, frameworks, plangs, programs } from "../../other/technologies";
+import { technologies } from "../../other/technologies";
 import { Card } from "../Card/Card";
 import { Link } from 'react-router-dom';
 
@@ -11,61 +11,27 @@ export default function Stack() {
             </div>
             <div className="mx-2 me-2 wrapper-all-techonologies">
 
-                <div className="row">
-                    {plangs.map((item) => {
-                        return (
-                            <Card
-                                title={item.title}
-                                link={item.link}
-                                srcImg={item.srcImg}
-                            />
-                        )
-                    })}
+                <div className='d-flex justify-content-center'>
+                    <div className="container-cards d-flex justify-content-center flex-wrap gap-4">
+                        {technologies.map((item) => {
+                            return (
+                                <Card
+                                    title={item.title}
+                                    link={item.link}
+                                    srcImg={item.srcImg}
+                                />
+                            )
+                        })}
+                    </div>
                 </div>
 
-                <div className="row mt-3">
-                    {frameworks.map((item) => {
-                        return (
-                            <Card
-                                link={item.link}
-                                title={item.title}
-                                srcImg={item.srcImg}
-                            />
-                        )
-                    })}
-                </div>
-
-
-                <div className="row mt-3">
-                    {databases.map((item) => {
-                        return (
-                            <Card
-                                link={item.link}
-                                title={item.title}
-                                srcImg={item.srcImg}
-                            />
-                        )
-                    })}
-                </div>
-
-                <div className="row mt-3">
-                    {programs.map((item) => {
-                        return (
-                            <Card
-                                link={item.link}
-                                title={item.title}
-                                srcImg={item.srcImg}
-                            />
-                        )
-                    })}
-                </div>
-                <div className="container-btns mt-4">
-                    <Link to="/">
-                        <button className="button button-stack mt-3">Go back</button>
-                    </Link>
-                </div>
             </div>
 
+            <div className="mt-5 d-flex justify-content-center">
+                <Link to="/">
+                    <button className="button button-stack mt-xl-5 mt-1">Go back</button>
+                </Link>
+            </div>
         </>
     )
 }

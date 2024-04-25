@@ -1,15 +1,7 @@
-import ts from '../assets/ts.png';
-import java from '../assets/Java.png';
-import python from '../assets/python.png';
-import react from '../assets/react.png';
-import vue from '../assets/vue.png';
+import ts from '../assets/ts.png';;
 import node from '../assets/node.png';
 import mongo from '../assets/mongo.svg';
-import psql from '../assets/psql.png';
-import vscode from '../assets/vscode.png';
-import ws from '../assets/ws.png';
-import ij from '../assets/ij.png';
-import figma from '../assets/figma.webp';
+import vite from '../assets/vite.png';
 
 export interface technologies {
     srcImg: string;
@@ -17,74 +9,35 @@ export interface technologies {
     link: string;
 }
 
-export const plangs: Array<technologies> = [
+export const technologies: Array<technologies> = [
     {
         title: "TypeScript",
         srcImg: ts,
         link: "https://www.typescriptlang.org/"
     },
     {
-        title: "Java",
-        srcImg: java,
-        link: "https://www.java.com/"
+        title: "Vite",
+        srcImg: vite,
+        link: "https://vitejs.dev/"
     },
     {
-        title: "Python",
-        srcImg: python,
-        link: "https://www.python.org/"
+        title: "Redux",
+        srcImg: "https://www.svgrepo.com/show/303557/redux-logo.svg",
+        link: "https://redux-toolkit.js.org/"
     },
-];
-
-export const frameworks: Array<technologies> = [
-    {
-        title: "React",
-        srcImg: react,
-        link: "https://react.dev/"
-    },
-    {
-        title: "Vue.js",
-        srcImg: vue,
-        link: "https://vuejs.org/"
-    },
-    {
-        title: "Express Node.js",
-        srcImg: node,
-        link: "https://expressjs.com/"
-    },
-];
-
-export const databases: Array<technologies> = [
     {
         title: "MongoDB",
         srcImg: mongo,
         link: "https://www.mongodb.com/"
     },
     {
-        title: "PostgreSQL",
-        srcImg: psql,
-        link: "https://www.postgresql.org/"
-    },
-];
-
-export const programs: Array<technologies> = [
-    {
-        title: "VS Code",
-        srcImg: vscode,
-        link: "https://code.visualstudio.com/"
+        title: "React",
+        srcImg: "https://www.logo.wine/a/logo/React_(web_framework)/React_(web_framework)-Logo.wine.svg",
+        link: "https://react.dev/"
     },
     {
-        title: "WebShtorm",
-        srcImg: ws,
-        link: "https://www.jetbrains.com/webstorm/"
+        title: "Express",
+        srcImg: node,
+        link: "https://expressjs.com/"
     },
-    {
-        title: "IntelliJ IDEA",
-        srcImg: ij,
-        link: "https://www.jetbrains.com/idea/"
-    },
-    {
-        title: "Figma",
-        srcImg: figma,
-        link: "https://www.figma.com/"
-    },
-];
+]
