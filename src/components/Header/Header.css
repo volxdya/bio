@@ -13,3 +13,9 @@
     top: -50px;
     position: relative;
 }
+
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 150px;
+    }
+}
