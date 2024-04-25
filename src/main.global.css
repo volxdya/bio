@@ -37,13 +37,8 @@ a {
     @viewport {
         user-zoom: fixed;
     }
-}
 
-@media screen and (max-height: 900px) {
-    .wrapper {
-        height: 840px;
-    }
-    .main-container {
-        height: 840px;
+    body,html {
+        overflow-y: none;
     }
 }
