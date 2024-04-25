@@ -36,7 +36,8 @@
 }
 
 @media screen and (max-width: 768px) {
+    
     .container-btns {
-        margin: 0 25px 320px 25px;
+        margin: 0 25px 0 25px;
     }
 }

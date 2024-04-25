@@ -20,23 +20,30 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 a {
     text-decoration: none;
     color: black;
     background: none;
 }
+
 @media screen and (max-width: 768px) {
 
     .main-container {
         height: 100%;
     }
 
-    body,
-    html {
-        overflow-y: hidden;
-    }
 
     @viewport {
         user-zoom: fixed;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    .wrapper {
+        height: 840px;
+    }
+    .main-container {
+        height: 840px;
     }
 }
