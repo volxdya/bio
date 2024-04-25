@@ -28,12 +28,12 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-
-    @viewport {
-        user-zoom: fixed;
+    .wrapper {
+        max-height: 850px;
+        align-items: flex-start;
     }
-
-    body, html {
-        overflow-y: hidden;
-      }
+    .main-container {
+        height: 100%;
+        max-height: 850px;
+    }
 }
