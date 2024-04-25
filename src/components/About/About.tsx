@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export function About() {
+export default function About() {
     return (
         <>
             <div className="text-center main-info">

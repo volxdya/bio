@@ -1,4 +1,4 @@
-import { technologies } from "../../data/technologies";
+import { technologies } from "../../other/technologies";
 
 export function Card({ srcImg, title, link }: technologies) {
     return (

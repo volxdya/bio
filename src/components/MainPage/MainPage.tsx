@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './MainPage.css';
 
-export function MainPage() {
+export default function MainPage() {
     return (
         <>
             <div className="text-center main-info">

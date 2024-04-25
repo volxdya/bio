@@ -1,9 +1,9 @@
 import './Stack.css';
-import { databases, frameworks, plangs, programs } from "../../data/technologies";
+import { databases, frameworks, plangs, programs } from "../../other/technologies";
 import { Card } from "../Card/Card";
 import { Link } from 'react-router-dom';
 
-export function Stack() {
+export default function Stack() {
     return (
         <>
             <div className="text-center main-info">

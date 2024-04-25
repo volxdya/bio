@@ -1,13 +1,15 @@
 import './main.global.css';
-import { MainPage } from './components/MainPage/MainPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Header } from './components/Header/Header';
-import { About } from './components/About/About';
-import { Stack } from './components/Stack/Stack';
+import { Suspense, lazy } from 'react';
 
 function App() {
+  const LazyMainPage = lazy(() => import('./components/MainPage/MainPage'));
+  const LazyAbout = lazy(() => import('./components/About/About'));
+  const LazyStack = lazy(() => import('./components/Stack/Stack'));
 
   return (
+    <Suspense fallback={<div>loading...</div>}>
     <BrowserRouter>
       <div className="wrapper">
         <div className="main-container">
@@ -17,9 +19,9 @@ function App() {
               <Header />
 
               <Routes>
-                <Route path="/" element={<MainPage />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/stack" element={<Stack />} />
+                <Route path="/" element={<LazyMainPage />} />
+                <Route path="/about" element={<LazyAbout />} />
+                <Route path="/stack" element={<LazyStack />} />
               </Routes>
 
             </div>
@@ -27,6 +29,7 @@ function App() {
         </div>
       </div>
     </BrowserRouter>
+    </Suspense>
   )
 }
 
