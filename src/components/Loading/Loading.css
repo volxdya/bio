@@ -1,0 +1,9 @@
+.container-spinner {
+    height: 850px;
+}
+
+@media screen and (max-width: 768px) {
+    .container-spinner {
+        height: 800px;
+    }
+}

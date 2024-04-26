@@ -2,6 +2,7 @@ import './main.global.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Header } from './components/Header/Header';
 import { Suspense, lazy } from 'react';
+import { Loading } from './components/Loading/Loading';
 
 function App() {
   const LazyMainPage = lazy(() => import('./components/MainPage/MainPage'));
@@ -9,26 +10,26 @@ function App() {
   const LazyStack = lazy(() => import('./components/Stack/Stack'));
 
   return (
-    <Suspense fallback={<div>loading...</div>}>
-    <BrowserRouter basename='/bio/'>
-      <div className="wrapper">
-        <div className="main-container">
-          <div className="w-100 d-flex justify-content-center">
-            <div className="w-100">
-1
-              <Header />
+    <Suspense fallback={<Loading />}>
+      <BrowserRouter basename='/bio/'>
+        <div className="wrapper">
+          <div className="main-container">
+            <div className="w-100 d-flex justify-content-center">
+              <div className="w-100">
+                1
+                <Header />
 
-              <Routes>
-                <Route path="/" element={<LazyMainPage />} />
-                <Route path="/about" element={<LazyAbout />} />
-                <Route path="/stack" element={<LazyStack />} />
-              </Routes>
+                <Routes>
+                  <Route path="/" element={<LazyMainPage />} />
+                  <Route path="/about" element={<LazyAbout />} />
+                  <Route path="/stack" element={<LazyStack />} />
+                </Routes>
 
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </BrowserRouter>
+      </BrowserRouter>
     </Suspense>
   )
 }
