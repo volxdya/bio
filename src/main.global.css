@@ -15,7 +15,7 @@ body {
 }
 
 .wrapper {
-    height: 950px;
+    height: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,6 @@ a {
     color: black;
     background: none;
 }
-
 @media screen and (max-width: 768px) {
     .wrapper {
         max-height: 850px;

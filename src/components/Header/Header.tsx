@@ -3,6 +3,7 @@ import './Header.css';
 export function Header() {
     return (
         <>
+        <div></div>
             <div>
                 <img
                     className="banner"
