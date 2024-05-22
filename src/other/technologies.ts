@@ -33,17 +33,17 @@ export const technologies: Array<technologies> = [
     {
         title: "Vue.js",
         srcImg: "https://github.com/l1agosta/l1agosta/assets/143471369/ba17cd12-a755-4746-8cd8-57be066d3225",
-        link: "https://vitejs.dev/"
+        link: "https://ru.vuejs.org/"
     },
     {
         title: "Nest.js",
         srcImg: 'https://github.com/l1agosta/l1agosta/assets/143471369/f290a2f9-03f7-47bc-bd5f-154e33b21c05',
-        link: "https://expressjs.com/"
+        link: "https://docs.nestjs.com/"
     },
     {
         title: "Next.js",
         srcImg: 'https://github.com/l1agosta/l1agosta/assets/143471369/bffa924b-d8c1-494e-8723-071d529c66b6',
-        link: "https://expressjs.com/"
+        link: "https://nextjs.org/"
     },
     {
         title: "Express.js",
