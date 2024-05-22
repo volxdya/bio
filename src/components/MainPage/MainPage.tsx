@@ -19,7 +19,7 @@ export default function MainPage() {
                     <button className="button mt-2">Telegram</button>
                 </a>
                 <a href="https://github.com/l1agosta" target='_blank'>
-                    <button className="button mt-2">GitHub (Soon only open source)</button>
+                    <button className="button mt-2">GitHub</button>
                 </a>
             </div>
         </>

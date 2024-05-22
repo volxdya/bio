@@ -27,9 +27,9 @@ export default function Stack() {
 
             </div>
 
-            <div className="mt-5 d-flex justify-content-center">
+            <div className="d-flex justify-content-center">
                 <Link to="/">
-                    <button className="button button-stack mt-xl-5 mt-1">Go back</button>
+                    <button className="button button-stack mt-xl-2  mt-1">Go back</button>
                 </Link>
             </div>
         </>
