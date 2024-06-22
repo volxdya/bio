@@ -6,7 +6,6 @@ export function Header() {
 
     const location = useLocation();
 
-    console.log(location.pathname);
 
     return (
         <header className="d-flex gap-4 justify-content-between px-5 align-items-center">
