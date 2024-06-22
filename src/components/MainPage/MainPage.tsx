@@ -27,9 +27,16 @@ export default function MainPage() {
             )}
 
             {location.pathname === '/blog' && (
-                <div>Скоро</div>
+                <div className="d-flex justify-content-center">
+                    <div className="mt-5">
+                        <h1 className="text-center soon-text">Soon</h1>
+                        <img src="https://i.ibb.co/9qFsrN1/image-Photoroom.png" height={175} className="mt-3" alt=""/>
+                    </div>
+                </div>
             )}
 
         </div>
     );
 }
+
+// test
