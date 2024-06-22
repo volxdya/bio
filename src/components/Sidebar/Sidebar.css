@@ -1,0 +1,26 @@
+.sidebar {
+    background: var(--block);
+    border-radius: 25px;
+    height: 100%;
+}
+.avatar {
+    border-radius: 25px;
+}
+.me {
+    background: #303030;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: 500;
+}
+.nickname {
+    font-weight: 400;
+    font-size: 30px;
+}
+.line {
+    height: 5px;
+    background: #2E2E2E;
+    border-radius: 25px;
+}
+.title-link:hover {
+    text-decoration: underline;
+}

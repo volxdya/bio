@@ -1,0 +1,17 @@
+.text-about {
+    color: var(--gray-text);
+    font-size: 18px;
+}
+.progress {
+    height: 25px;
+    border-radius: 15px;
+    font-size: 14px;
+
+}
+.progress-bar {
+    background: var(--text);
+    color: black;
+    font-weight: bold;
+    text-align: start;
+    padding-left: 5px;
+}

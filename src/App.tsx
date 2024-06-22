@@ -1,37 +1,27 @@
 import './main.global.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Header } from './components/Header/Header';
-import { Suspense, lazy } from 'react';
-import { Loading } from './components/Loading/Loading';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import {Suspense, lazy} from 'react';
+import {Sidebar} from "./components/Sidebar/Sidebar.tsx";
 
 function App() {
-  const LazyMainPage = lazy(() => import('./components/MainPage/MainPage'));
-  const LazyAbout = lazy(() => import('./components/About/About'));
-  const LazyStack = lazy(() => import('./components/Stack/Stack'));
+    const LazyMainPage = lazy(() => import('./components/MainPage/MainPage'));
 
-  return (
-    <Suspense fallback={<Loading />}>
-      <BrowserRouter basename='/bio/'>
-        <div className="wrapper">
-          <div className="main-container">
-            <div className="w-100 d-flex justify-content-center">
-              <div className="w-100">
-                1
-                <Header />
-
-                <Routes>
-                  <Route path="/" element={<LazyMainPage />} />
-                  <Route path="/about" element={<LazyAbout />} />
-                  <Route path="/stack" element={<LazyStack />} />
-                </Routes>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </BrowserRouter>
-    </Suspense>
-  )
+    return (
+        <Suspense fallback={<div/>}>
+            <BrowserRouter basename='/bio/'>
+                <div className="w-100 px-xl-5 mt-xl-5">
+                    <div className="row g-0">
+                        <Sidebar/>
+                        <Routes>
+                            <Route path="/" element={<LazyMainPage/>}/>
+                            <Route path="/stack" element={<LazyMainPage/>}/>
+                            <Route path="/blog" element={<LazyMainPage/>}/>
+                        </Routes>
+                    </div>
+                </div>
+            </BrowserRouter>
+        </Suspense>
+    )
 }
 
 export default App;

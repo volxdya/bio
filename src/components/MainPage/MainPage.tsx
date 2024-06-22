@@ -1,27 +1,30 @@
-import { Link } from 'react-router-dom';
 import './MainPage.css';
+import {Header} from "../Header/Header.tsx";
+import {About} from "../About/About.tsx";
+import {useLocation} from "react-router-dom";
 
 export default function MainPage() {
+    const location = useLocation();
+    console.log(location.pathname);
+
     return (
-        <>
-            <div className="text-center main-info">
-                <p className="main-title">Vladimir</p>
-                <p className="other-title">FullStack developer</p>
+        <div className="col-xl-7 main mx-xl-5 mt-xl-2 mt-5">
+            <div className="d-xl-block d-none">
+                <Header/>
             </div>
-            <div className="container-btns">
-                <Link to="/about">
-                    <button className="button">About me</button>
-                </Link>
-                <Link to="/stack">
-                    <button className="button mt-2">Stack</button>
-                </Link>
-                <a href="https://t.me/volxdya" target='_blank'>
-                    <button className="button mt-2">Telegram</button>
-                </a>
-                <a href="https://github.com/l1agosta" target='_blank'>
-                    <button className="button mt-2">GitHub</button>
-                </a>
-            </div>
-        </>
+
+            {location.pathname === '/' && (
+                <About/>
+            )}
+
+            {location.pathname === '/stack' && (
+                <div>Скоро</div>
+            )}
+
+            {location.pathname === '/blog' && (
+                <div>Скоро</div>
+            )}
+
+        </div>
     );
 }

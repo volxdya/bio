@@ -1,22 +1,21 @@
-.banner {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-    top: -50px;
-    position: relative;
+header {
+    background-color: #353535;
+    width: 50%;
+    height: 50px;
+    border-bottom-right-radius: 25px;
 }
-
-.avatar {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    top: -120px;
-    position: relative;
+.header-link {
+    font-size: 18px;
+}
+.active {
+    color: var(--text);
 }
 
 @media screen and (max-width: 768px) {
-    .banner {
-        height: 150px;
+    header {
+        width: 100%;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        background-color: var(--block);
     }
 }

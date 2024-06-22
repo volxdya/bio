@@ -1,0 +1,16 @@
+.title-info {
+    color: #8D8D8D;
+    font-weight: 400;
+    font-size: 16px;
+}
+.title-link {
+    font-size: 17px;
+    font-weight: 500;
+}
+.sidebar-icon svg:hover{
+    cursor: pointer;
+
+    path {
+        fill: #ec59ff;
+    }
+}

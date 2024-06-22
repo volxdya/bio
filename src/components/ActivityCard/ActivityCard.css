@@ -1,0 +1,30 @@
+.activity-card {
+    background: #383838;
+    border-radius: 15px;
+    width: 460px;
+}
+.activity-title {
+    font-weight: 300;
+    font-size: 25px;
+}
+.activity-text {
+    font-weight: 500;
+    color: var(--gray-text);
+    font-size: 16px;
+}
+.activity-card-icon {
+    background-color: #383838;
+    height: 58px;
+    width: 58px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+    right: -50px;
+}
+.activity-card-content {
+    position: relative;
+    top: -40px;
+}
