@@ -6,7 +6,6 @@ import {Soon} from "../Soon/Soon.tsx";
 
 export default function MainPage() {
     const location = useLocation();
-    console.log(location.pathname);
 
     return (
         <div className="col-xl-7 main mx-xl-5 mt-xl-2 mt-5">
