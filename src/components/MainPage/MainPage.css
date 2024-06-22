@@ -10,9 +10,6 @@
     display: none;
 }
 
-.soon-text {
-    font-size: 30px;
-}
 
 @media screen and (max-width: 768px) {
     .main {

@@ -12,7 +12,7 @@ export function About() {
             <p className="py-3 text-about text-xl-start text-center">
                 My name is Vladimir, I’m 16 years old, a full stack developer from Bashkortostan. I've been
                 programming since I was 13 years old.
-                About 1.5 years of experience in developing complex web applications. Wrote such favorite
+                About 1.5 years of experience in developing complex web applications. Wrote such best
                 projects as: an online store, a social network, a Reddit mirror, a platform for searching films.
                 <br/>
 

@@ -1,0 +1,8 @@
+.soon-text {
+    font-size: 40px;
+}
+@media screen and (max-width: 768px) {
+    .soon-text {
+        font-size: 40px;
+    }
+}

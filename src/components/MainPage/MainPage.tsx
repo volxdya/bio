@@ -2,6 +2,7 @@ import './MainPage.css';
 import {Header} from "../Header/Header.tsx";
 import {About} from "../About/About.tsx";
 import {useLocation} from "react-router-dom";
+import {Soon} from "../Soon/Soon.tsx";
 
 export default function MainPage() {
     const location = useLocation();
@@ -18,21 +19,11 @@ export default function MainPage() {
             )}
 
             {location.pathname === '/stack' && (
-                <div className="d-flex justify-content-center">
-                    <div className="mt-5">
-                        <h1 className="text-center soon-text">Soon</h1>
-                        <img src="https://i.ibb.co/9qFsrN1/image-Photoroom.png" height={175} className="mt-3" alt=""/>
-                    </div>
-                </div>
+                <Soon/>
             )}
 
             {location.pathname === '/blog' && (
-                <div className="d-flex justify-content-center">
-                    <div className="mt-5">
-                        <h1 className="text-center soon-text">Soon</h1>
-                        <img src="https://i.ibb.co/9qFsrN1/image-Photoroom.png" height={175} className="mt-3" alt=""/>
-                    </div>
-                </div>
+                <Soon/>
             )}
 
         </div>
