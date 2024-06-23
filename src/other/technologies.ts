@@ -42,12 +42,6 @@ export const technologies: Array<technologies> = [
         description: "Builder Frontend"
     },
     {
-        title: "Webpack",
-        srcImg: "https://private-user-images.githubusercontent.com/143471369/326991952-402528bb-c24a-49b9-9e1a-fd2843bdc8c0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTkxMTIwOTQsIm5iZiI6MTcxOTExMTc5NCwicGF0aCI6Ii8xNDM0NzEzNjkvMzI2OTkxOTUyLTQwMjUyOGJiLWMyNGEtNDliOS05ZTFhLWZkMjg0M2JkYzhjMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYyM1QwMzAzMTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zMzI2OWFjNDcyNDhjNzlmOGFjNDhhY2IzYzJhMDk0YWU5OTI1ZmNmYzBmZGU4ZmE1ZmIwNTg5YTRmNDRkMzk4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.U97JlIoaQY55fxalqWUdaLDkgR8sPOMDwoJ02XmBXjQ",
-        link: "https://webpack.js.org/",
-        description: "Builder Frontend"
-    },
-    {
         title: "Vue.js",
         srcImg: "https://github.com/l1agosta/l1agosta/assets/143471369/ba17cd12-a755-4746-8cd8-57be066d3225",
         link: "https://ru.vuejs.org/",
@@ -79,19 +73,13 @@ export const technologies: Array<technologies> = [
     },
     {
         title: "PostgreSQL",
-        srcImg: "https://private-user-images.githubusercontent.com/143471369/326989588-3a542448-8a3a-47b0-a064-bb7121763d92.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTkxMTIwOTQsIm5iZiI6MTcxOTExMTc5NCwicGF0aCI6Ii8xNDM0NzEzNjkvMzI2OTg5NTg4LTNhNTQyNDQ4LThhM2EtNDdiMC1hMDY0LWJiNzEyMTc2M2Q5Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYyM1QwMzAzMTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lZGI5NWYzZDAxNTdjNjU3MzUyNDc4MDVhOWRlMTVhZmRiZTljYzJmZTczZGJiMTc2ODQwODg4YjQ4ZDhlZWM3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.zKoU8-1IXL39pIvWKnbJ-rVfE_IITw196osmcXOj-04",
-        link: "https://www.postgresql.org/",
-        description: "Relational DB"
-    },
-    {
-        title: "PostgreSQL",
-        srcImg: "https://private-user-images.githubusercontent.com/143471369/326989588-3a542448-8a3a-47b0-a064-bb7121763d92.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTkxMTIwOTQsIm5iZiI6MTcxOTExMTc5NCwicGF0aCI6Ii8xNDM0NzEzNjkvMzI2OTg5NTg4LTNhNTQyNDQ4LThhM2EtNDdiMC1hMDY0LWJiNzEyMTc2M2Q5Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYyM1QwMzAzMTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lZGI5NWYzZDAxNTdjNjU3MzUyNDc4MDVhOWRlMTVhZmRiZTljYzJmZTczZGJiMTc2ODQwODg4YjQ4ZDhlZWM3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.zKoU8-1IXL39pIvWKnbJ-rVfE_IITw196osmcXOj-04",
+        srcImg: "https://static-00.iconduck.com/assets.00/postgresql-icon-1987x2048-v2fkmdaw.png",
         link: "https://www.postgresql.org/",
         description: "Relational DB"
     },
     {
         title: "Git",
-        srcImg: "https://private-user-images.githubusercontent.com/143471369/326989459-5cf6252c-b1d3-4109-a53b-e8fd21d7dfe8.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTkxMTIwOTQsIm5iZiI6MTcxOTExMTc5NCwicGF0aCI6Ii8xNDM0NzEzNjkvMzI2OTg5NDU5LTVjZjYyNTJjLWIxZDMtNDEwOS1hNTNiLWU4ZmQyMWQ3ZGZlOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYyM1QwMzAzMTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xZDZlODU1NDUzMmFiMzU2NmM0ZjU1ZTBmY2M0MjI3Y2JmNjkwMzZmNjliMzBiMGMzMzUwNTI4MDNmZjJhZTJhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.yicxvtdVwSHTjqlTibSGsjJ-Br_cQ5k8rcglamZ3dQQ",
+        srcImg: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png",
         link: "https://git-scm.com/",
         description: "System Control Version"
     }
