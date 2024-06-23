@@ -2,8 +2,8 @@ import './MainPage.css';
 import {Header} from "../Header/Header.tsx";
 import {About} from "../About/About.tsx";
 import {useLocation} from "react-router-dom";
-import {Soon} from "../Soon/Soon.tsx";
 import {Blog} from "../Blog/Blog.tsx";
+import {Stack} from "../Stack/Stack.tsx";
 
 export default function MainPage() {
     const location = useLocation();
@@ -19,7 +19,7 @@ export default function MainPage() {
             )}
 
             {location.pathname === '/stack' && (
-                <Soon/>
+                <Stack/>
             )}
 
             {location.pathname === '/blog' && (

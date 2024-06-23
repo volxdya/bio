@@ -7,7 +7,7 @@ export function Blog() {
         <div className="d-flex justify-content-center mt-5">
             <div className="col-xl-5">
                 <h1 className="text-center">Blog</h1>
-                <p className="text-xl-start text-center">I have a telegram channel in which I post all my news, my life, useful materials and vibe posts</p>
+                <p className="text-xl-start text-centernp">I have a telegram channel in which I post all my news, my life, useful materials and vibe posts</p>
                 <div className="d-flex justify-content-center mt-5">
                     <div>
                         <div className="d-flex align-items-center justify-content-center">
