@@ -16,6 +16,13 @@
     color: #929292;
     font-size: 15px;
 }
+.container-player {
+}
+.time {
+    color: var(--gray-text);
+    margin: 0;
+    padding: 0;
+}
 @media screen and (max-width: 768px) {
     .item-stack {
         height: 190px;

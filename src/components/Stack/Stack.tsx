@@ -49,7 +49,11 @@ export function Stack() {
         }
     }, [time]);
 
-    console.log(time);
+    function getPadTimeZero(time: number): string {
+        return time.toString().padStart(2, "0");
+    }
+
+    const newTime = getPadTimeZero(Math.floor(time / 10));
 
     return (
         <>
@@ -57,7 +61,8 @@ export function Stack() {
 
                 <div className="col-xl-5 col-11">
                     <h1 className="text-center mt-3">Stack</h1>
-                    <p className="text-center dev-ops-info">When I delve deeper into studying devops, I’ll add technologies that will be used in devops engineering</p>
+                    <p className="text-center dev-ops-info">When I delve deeper into studying devops, I’ll add
+                        technologies that will be used in devops engineering</p>
 
                     <div id="carouselExample" className="carousel slide mt-5">
                         <div className="carousel-inner">
@@ -87,14 +92,29 @@ export function Stack() {
                     </div>
 
                     <h4 className="text-center mt-5">{technologies[current].title}</h4>
+
                     <h5 className="stack-description text-center">{technologies[current].description}</h5>
-                    <div className="progress mt-5" role="progressbar" aria-label="Example 20px high" aria-valuenow={80}
-                         aria-valuemin={0} aria-valuemax={100} style={{
-                        height: "20px"
-                    }}>
-                        <div className="progress-bar" style={{
-                            width: `${time}%`
-                        }}></div>
+                    <div className="mt-5 g-0">
+                        <div className="row">
+                            <div className="col-2">
+                                <span className="time">00:{newTime}</span>
+
+                            </div>
+                            <div className="col-8">
+                                <div className="progress" role="progressbar" aria-label="Example 20px high"
+                                     aria-valuenow={80}
+                                     aria-valuemin={0} aria-valuemax={100} style={{
+                                    height: "20px"
+                                }}>
+                                    <div className="progress-bar" style={{
+                                        width: `${time}%`
+                                    }}></div>
+                                </div>
+                            </div>
+                            <div className="col-2">
+                                <span className="time">00:10</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
