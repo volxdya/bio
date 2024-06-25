@@ -81,6 +81,6 @@ export const technologies: Array<technologies> = [
         title: "Git",
         srcImg: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png",
         link: "https://git-scm.com/",
-        description: "System Control Versions"
+        description: "Version Control"
     }
 ]
