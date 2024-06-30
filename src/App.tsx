@@ -2,12 +2,13 @@ import './main.global.css';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import {Suspense, lazy} from 'react';
 import {Sidebar} from "./components/Sidebar/Sidebar.tsx";
+import { Loader } from './components/Loader/Loader.tsx';
 
 function App() {
     const LazyMainPage = lazy(() => import('./components/MainPage/MainPage'));
 
     return (
-        <Suspense fallback={<div/>}>
+        <Suspense fallback={<Loader/>}>
             <BrowserRouter basename='/bio/'>
                 <div className="w-100 px-xl-5 mt-xl-5">
                     <div className="row g-0">

@@ -1,0 +1,7 @@
+.container-loading {
+    height: 100vh;
+}
+.spinner-border {
+    height: 80px;
+    width: 80px;
+}
