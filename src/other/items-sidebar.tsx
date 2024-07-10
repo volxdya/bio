@@ -19,8 +19,8 @@ export const itemsSidebar: ISidebar[] = [
     {
         preTitle: "GitHub",
         component: <GitHub/>,
-        link: "https://github.com/l1agosta/",
-        title: "@l1agosta"
+        link: "https://github.com/volxdya/",
+        title: "@volxdya"
     },
     {
         preTitle: "Location",
