@@ -1,6 +1,10 @@
 .soon-text {
     font-size: 40px;
 }
+
+.other-text {
+    color: var(--gray-text);
+}
 @media screen and (max-width: 768px) {
     .soon-text {
         font-size: 40px;

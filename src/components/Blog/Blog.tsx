@@ -1,12 +1,11 @@
-import {Telegram} from "../../icons/Telegram.tsx";
 import './Blog.css';
-import {Line} from "../../icons/Line.tsx";
+import { Soon } from "../Soon/Soon.tsx";
 
 export function Blog() {
     return (
         <div className="d-flex justify-content-center mt-5">
             <div className="col-xl-5">
-                <h1 className="text-center">Blog</h1>
+                {/* <h1 className="text-center">Blog</h1>
                 <p className="text-xl-start text-centernp">I have a telegram channel in which I post all my news, my life, useful materials and vibe posts</p>
                 <div className="d-flex justify-content-center mt-5">
                     <div>
@@ -29,7 +28,12 @@ export function Blog() {
                         </div>
 
                     </div>
-                </div>
+                </div> */}
+
+                <Soon
+                    text="Soon"
+                    other="I had a telegram channel, but I have closed it so far"
+                />
             </div>
         </div>
     );

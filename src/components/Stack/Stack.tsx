@@ -118,7 +118,7 @@ export function Stack() {
                     </div>
                 </div>
             </div>
-            <Soon/>
+            <Soon text="This page will be finalized"/>
         </>
     );
 }
