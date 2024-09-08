@@ -7,7 +7,7 @@ import {Header} from "../Header/Header.tsx";
 export function Sidebar() {
 
     return (
-        <div className="col-xl-2 col-lg-12 col-12 mx-xl-5 sidebar p-xl-4 mt-xl-2">
+        <div className="col-xl-2 col-12 mx-xl-5 sidebar p-xl-4 mt-xl-2">
             <div className="mb-5">
                 <div className="d-flex justify-content-center">
                     <img className="avatar mt-4"

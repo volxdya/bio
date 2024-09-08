@@ -26,7 +26,17 @@
 }
 
 @media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+    }
+
     .activity-sidebar {
         margin: 0 10px 0 10px;
+    }
+}
+
+@media screen and (min-width: 1208px) {
+    .sidebar {
+        width: 250px;
     }
 }

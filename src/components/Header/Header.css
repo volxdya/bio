@@ -4,14 +4,16 @@ header {
     height: 50px;
     border-bottom-right-radius: 25px;
 }
+
 .header-link {
     font-size: 18px;
 }
+
 .active {
     color: var(--text);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     header {
         width: 100%;
         border-bottom-right-radius: 25px;
