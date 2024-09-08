@@ -3,15 +3,18 @@
     border-radius: 15px;
     width: 420px;
 }
+
 .activity-title {
     font-weight: 300;
     font-size: 25px;
 }
+
 .activity-text {
     font-weight: 500;
     color: var(--gray-text);
     font-size: 16px;
 }
+
 .activity-card-icon {
     background-color: #383838;
     height: 58px;
@@ -24,7 +27,20 @@
     top: -50px;
     right: -50px;
 }
+
 .activity-card-content {
     position: relative;
     top: -40px;
+}
+
+@media screen and (max-width: 1800px) {
+    .activity-card {
+        width: 340px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .activity-card {
+        width: 100%;
+    }
 }

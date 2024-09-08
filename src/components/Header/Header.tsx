@@ -1,6 +1,6 @@
 import './Header.css';
-import {header, IHeader} from "../../other/items-header.ts";
-import {Link, useLocation} from "react-router-dom";
+import { header, IHeader } from "../../other/items-header.ts";
+import { Link, useLocation } from "react-router-dom";
 
 export function Header() {
 

@@ -54,6 +54,12 @@ export const technologies: Array<technologies> = [
         description: "Backend Framework"
     },
     {
+        title: "Docker",
+        srcImg: 'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png',
+        link: "https://www.docker.com/",
+        description: "Helper build apps in conatiners"
+    },
+    {
         title: "Next.js",
         srcImg: 'https://github.com/l1agosta/l1agosta/assets/143471369/bffa924b-d8c1-494e-8723-071d529c66b6',
         link: "https://nextjs.org/",

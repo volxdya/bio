@@ -8,10 +8,15 @@
     font-size: 20px;
     animation: pulse 2s infinite;
 }
+
 .container-blog-img {
     border-radius: 25px;
     padding: 10px;
     background: white;
+}
+
+.description-tg {
+    color: var(--gray-text);
 }
 
 @keyframes pulse {
@@ -19,10 +24,12 @@
         transform: scale(1);
         box-shadow: 0px 0px 10px #a500d6;
     }
+
     50% {
         transform: scale(1.02);
         box-shadow: 0px 0px 15px #cd00ff;
     }
+
     100% {
         transform: scale(1);
         box-shadow: 0px 0px 10px #a500d6;
