@@ -9,10 +9,6 @@ export const skills: ISkills[] = [
         progress: 75,
     },
     {
-        title: "DevOps",
-        progress: 13,
-    },
-    {
         title: "Web design",
         progress: 25,
     }

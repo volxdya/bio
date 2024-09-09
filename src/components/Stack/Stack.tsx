@@ -1,9 +1,9 @@
 import './Stack.css';
-import {Next} from "../../icons/Next.tsx";
-import {Back} from "../../icons/Back.tsx";
-import {useEffect, useState} from "react";
-import {technologies} from "../../other/technologies.ts";
-import {Soon} from "../Soon/Soon.tsx";
+import { Next } from "../../icons/Next.tsx";
+import { Back } from "../../icons/Back.tsx";
+import { useEffect, useState } from "react";
+import { technologies } from "../../other/technologies.ts";
+import { Soon } from "../Soon/Soon.tsx";
 
 export function Stack() {
     const [current, setCurrent] = useState(0);
@@ -61,8 +61,7 @@ export function Stack() {
 
                 <div className="col-xl-5 col-11">
                     <h1 className="text-center mt-3">Stack</h1>
-                    <p className="text-center dev-ops-info">When I delve deeper into studying devops, I’ll add
-                        technologies that will be used in devops engineering</p>
+                    <p className="text-center dev-ops-info">Here is a list of technologies that I use in my work</p>
 
                     <div id="carouselExample" className="carousel slide mt-5">
                         <div className="carousel-inner">
@@ -78,15 +77,15 @@ export function Stack() {
 
                         </div>
                         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                                data-bs-slide="prev" onClick={back}>
-                            <span aria-hidden="true"><Back/></span>
+                            data-bs-slide="prev" onClick={back}>
+                            <span aria-hidden="true"><Back /></span>
                             <span className="visually-hidden">Previous</span>
                         </button>
 
 
                         <button className="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                                data-bs-slide="next" onClick={next}>
-                            <span aria-hidden="true"><Next/></span>
+                            data-bs-slide="next" onClick={next}>
+                            <span aria-hidden="true"><Next /></span>
                             <span className="visually-hidden">Next</span>
                         </button>
                     </div>
@@ -102,10 +101,10 @@ export function Stack() {
                             </div>
                             <div className="col-8">
                                 <div className="progress" role="progressbar" aria-label="Example 20px high"
-                                     aria-valuenow={80}
-                                     aria-valuemin={0} aria-valuemax={100} style={{
-                                    height: "20px"
-                                }}>
+                                    aria-valuenow={80}
+                                    aria-valuemin={0} aria-valuemax={100} style={{
+                                        height: "20px"
+                                    }}>
                                     <div className="progress-bar" style={{
                                         width: `${time}%`
                                     }}></div>
@@ -118,7 +117,7 @@ export function Stack() {
                     </div>
                 </div>
             </div>
-            <Soon text="This page will be finalized"/>
+            <Soon text="This page have some bugs, will be finalized" />
         </>
     );
 }
