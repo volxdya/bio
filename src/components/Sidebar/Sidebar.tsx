@@ -15,7 +15,7 @@ export function Sidebar() {
                          alt="avatar" height={125} width={125}/>
                 </div>
                 <h3 className="mt-4 text-center nickname">volxdya</h3>
-                <div className="text-center me mt-4 activity-sidebar">Fullstack / DevOps</div>
+                <div className="text-center me mt-4 activity-sidebar">Fullstack developer</div>
                 <div className="line mt-4"></div>
                 <div className="mt-4">
                     {itemsSidebar.map((item: ISidebar) => {
