@@ -13,7 +13,7 @@ export const itemsSidebar: ISidebar[] = [
     {
         preTitle: "Telegram",
         component: <Telegram/>,
-        link: "https://t.me/volxdya",
+        link: "https://t.me/hoodrichlpablojuan",
         title: "@volxdya"
     },
     {
