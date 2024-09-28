@@ -1,24 +1,19 @@
 import './main.global.css';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import {Suspense, lazy} from 'react';
-import {Sidebar} from "./components/Sidebar/Sidebar.tsx";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Suspense, lazy } from 'react';
 import { Loader } from './components/Loader/Loader.tsx';
 
 function App() {
     const LazyMainPage = lazy(() => import('./components/MainPage/MainPage'));
 
     return (
-        <Suspense fallback={<Loader/>}>
+        <Suspense fallback={<Loader />}>
             <BrowserRouter basename='/bio/'>
-                <div className="w-100 px-xl-5 mt-xl-5">
-                    <div className="row g-0">
-                        <Sidebar/>
-                        <Routes>
-                            <Route path="/" element={<LazyMainPage/>}/>
-                            <Route path="/stack" element={<LazyMainPage/>}/>
-                            <Route path="/blog" element={<LazyMainPage/>}/>
-                        </Routes>
-                    </div>
+                <div className='wrapper' />
+                <div className='content'>
+                    <Routes>
+                        <Route path="/" element={<LazyMainPage />} />
+                    </Routes>
                 </div>
             </BrowserRouter>
         </Suspense>

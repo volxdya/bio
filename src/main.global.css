@@ -9,12 +9,39 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #1F1F1F;
+    background-color: #222222;
     color: white;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     overflow: hidden;
+}
+
+.wrapper {
+    background-image: url('https://i.pinimg.com/originals/7b/00/af/7b00aff647464fa15b6b67a31caf76e2.gif');
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    filter: blur(0.5rem) brightness(0.3);
+}
+
+.content {
+    width: 100%;
+    overflow-x: hidden;
+    overflow: scroll;
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    height: 950px;
+    z-index: 2;
 }
 
 a {
