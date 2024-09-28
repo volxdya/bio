@@ -53,7 +53,7 @@ export default function MainPage() {
 
                         <div className='d-flex justify-content-center links mt-4 gap-2'>
                             {itemsSidebar.map((item: ISidebar) => (
-                                <a href={item.link} target={'_blank'}>
+                                <a href={item.link} target={'_blank'} data-bs-toggle="tooltip" title={item.preTitle}>
                                     {item.component}
                                 </a>
                             ))}
