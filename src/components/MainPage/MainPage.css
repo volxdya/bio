@@ -3,7 +3,7 @@
 }
 
 .container-card {
-    background: rgba(27, 27, 27, 0.236);
+    background: rgba(27, 27, 27, 0.307);
     width: 450px;
     border-radius: 25px;
 }
@@ -70,12 +70,16 @@
 }
 
 @media screen and (max-width: 768px) {
-
     .text-card {
         font-size: 25px;
     }
 
     .activity-badge {
         font-size: 12px;
+    }
+
+
+    .container-card {
+        width: calc(100vw - 30px)
     }
 }

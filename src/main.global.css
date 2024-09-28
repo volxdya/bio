@@ -24,7 +24,7 @@ body {
     background-position: center;
     background-size: cover;
     height: calc(100vh + 50px);
-    filter: blur(0.5rem) brightness(0.3);
+    filter: blur(0.9rem) brightness(0.3);
 }
 
 .content {
