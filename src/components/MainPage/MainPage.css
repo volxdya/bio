@@ -4,8 +4,7 @@
 
 .container-card {
     background: rgba(27, 27, 27, 0.236);
-    height: 450px;
-    width: 550px;
+    width: 450px;
     border-radius: 25px;
 }
 
@@ -77,6 +76,6 @@
     }
 
     .activity-badge {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
