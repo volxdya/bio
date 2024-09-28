@@ -23,14 +23,15 @@ body {
     position: relative;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 973px;
     filter: blur(0.5rem) brightness(0.3);
 }
 
 .content {
     width: 100%;
-    overflow-x: hidden;
-    overflow: scroll;
+    overflow: hidden;
+    height: 950px;
+    height: 100%;
 }
 
 .content::-webkit-scrollbar {
