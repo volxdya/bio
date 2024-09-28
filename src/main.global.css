@@ -31,7 +31,6 @@ body {
     width: 100%;
     overflow: hidden;
     height: 100vh;
-    height: 100%;
 }
 
 .content::-webkit-scrollbar {
@@ -48,10 +47,4 @@ body {
 a {
     text-decoration: none;
     color: aliceblue;
-}
-
-@media screen and (max-width: 768px) {
-    body {
-        overflow: scroll;
-    }
 }
