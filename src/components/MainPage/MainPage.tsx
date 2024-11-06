@@ -42,13 +42,13 @@ export default function MainPage() {
                         <p className='text-center pt-3 text-card'>volxdya</p>
 
                         <div className='d-flex activity mt-3 gap-3'>
-                            <div className='activity-badge'>Fullstack Developer</div>
+                            <div className='activity-badge'>NodeJS Developer</div>
                             <div className='activity-badge'>Some UX/UI Designer</div>
                         </div>
 
                         <div className='mt-4 other-text text-center pt-3'>
+                            <p>1.5 years of experience in development</p>
                             <p>He / Him</p>
-                            <p>This page will be finalized</p>
                         </div>
 
                         <div className='d-flex justify-content-center links mt-4 gap-2'>
