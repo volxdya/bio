@@ -1,11 +1,12 @@
-import { useState } from 'react';
-import { ISidebar, itemsSidebar } from '../../other/items-sidebar';
+import {useEffect, useState} from 'react';
+import {ISidebar, itemsSidebar} from '../../other/items-sidebar';
 import './MainPage.css';
+import dayjs from 'dayjs';
 
 export default function MainPage() {
-
     const [rotateX, setRotateX] = useState(0);
     const [rotateY, setRotateY] = useState(0);
+    const [experience, setExperience] = useState("");
 
     const handleMouseMove = (e: any) => {
         const card = e.currentTarget;
@@ -26,14 +27,24 @@ export default function MainPage() {
         setRotateY(0);
     };
 
+    useEffect(() => {
+        const currentDate: number[] = dayjs().format('YYYY-MM').split('-').map((item: string) => Number(item));
+        const startDate: number[] = [2022, 10];
+        const years: number = currentDate[0] - startDate[0];
+        const months: number = (currentDate[1] - startDate[1]) / 12;
+
+        setExperience((years + months).toFixed(1));
+    }, []);
+
     return (
         <div className='d-flex align-items-center justify-content-center main-card w-100'>
             <div className='container-card py-5'
-                onMouseMove={handleMouseMove}
-                onMouseLeave={handleMouseLeave}
-                style={{ transform: `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)` }}>
+                 onMouseMove={handleMouseMove}
+                 onMouseLeave={handleMouseLeave}
+                 style={{transform: `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`}}>
                 <div className='d-flex justify-content-center'>
-                    <img src="https://i.pinimg.com/564x/1d/aa/fd/1daafdd0db187067f59279b6f2bbb373.jpg" className='img-card' />
+                    <img src="https://i.pinimg.com/564x/1d/aa/fd/1daafdd0db187067f59279b6f2bbb373.jpg"
+                         className='img-card'/>
                 </div>
 
                 <div className='d-flex justify-content-center'>
@@ -47,7 +58,7 @@ export default function MainPage() {
                         </div>
 
                         <div className='mt-4 other-text text-center pt-3'>
-                            <p>1.5 years of experience in development</p>
+                            <p>{experience} years of experience in development</p>
                             <p>He / Him</p>
                         </div>
 
