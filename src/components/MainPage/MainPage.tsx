@@ -29,7 +29,7 @@ export default function MainPage() {
 
     useEffect(() => {
         const currentDate: number[] = dayjs().format('YYYY-MM').split('-').map((item: string) => Number(item));
-        const startDate: number[] = [2022, 10];
+        const startDate: number[] = [2023, 8];
         const years: number = currentDate[0] - startDate[0];
         const months: number = (currentDate[1] - startDate[1]) / 12;
 
